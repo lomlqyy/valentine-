@@ -3,16 +3,14 @@ document.addEventListener("DOMContentLoaded", function() {
     setTimeout(() => {
         greeting.style.opacity = 1;
     }, 500);
-});
 document.getElementById('changeMessageBtn').addEventListener('click', function() {
   const messages = [
     "You're my everything!",
-    "Together, we're unstoppable!",
-    "My heart beats for you!",
-    "Forever and always, R+S ❤️",
-    "You make my life complete!"
+    "I LOVE YOUUU SOO MUCHH",
+    "My HEART beats for you ml !!",
+    "forever and always ❤️",
+    "You're the completion of my life ngl HAHAHSHSS"
   ];
-
   // Randomly pick a message
   const randomMessage = messages[Math.floor(Math.random() * messages.length)];
 
