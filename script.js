@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", function() {
     }, 500);
 });
 document.getElementById('changeMessageBtn').addEventListener('click', function() {
-  const messages = [
-    "You're my everything!",
+  const messages = [ 
+    "YOU'RE my everything!",
     "I LOVE YOUUU SOO MUCHH",
     "My HEART beats for you ml !!",
     "forever and always ❤️",
