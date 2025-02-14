@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Valentine? r , s | Valentine's Day</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .button {
+      font-size: 20px;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: all 0.2s ease, }
+      </style> 
 </head>
 <body>
   <div class="container">
@@ -25,17 +32,28 @@
           <img src="uuu.jpg" alt="Love 2">
         </div>
       </div>
-      
    </div>
+  
+   <!--button--> 
    <button id="changeMessageBtn"> presspresspress</button>
-  <p class="welcome-message"> a day full of love and sweetness </p>
-          <button onclick="window.location.href='page2.html'">YESS<"</button>
-          <button>">NO? :(<"</button>
+  <p class="welcome-message">next page yes ?? </p>
+          <button id="yesButton" onclick="window.location.href='page2.html'">YESS</button>
+          <button id="noButton" onclick="selectoption('No')">NO? :(</button></button>
     <footer>
       <p>made with love ♥︎</p>
     </footer>
   </div>
+  
+  <!--script ahh-->
+  <script>
+    let yesButton = document.getElementById("yesButton");
+    let noButton = document.getElementById("noButton");
 
-  <script src="script.js"></script>
+    noButton.addEventListener("click", function() {
+      let currentSize = parseInt(window.getComputedStyle(yesButton).fontSize);
+      yesButton.style.fontSize = (currentSize + 10) + "px"; // Increase font size by 10px on each click
+    });
+  </script>
+<script src="script.js"> </script> 
 </body>
 </html>
