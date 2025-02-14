@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     setTimeout(() => {
         greeting.style.opacity = 1;
     }, 500);
+});
 document.getElementById('changeMessageBtn').addEventListener('click', function() {
   const messages = [
     "You're my everything!",
