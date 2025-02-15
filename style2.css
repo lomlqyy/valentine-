@@ -45,12 +45,14 @@ p#greeting {
     color: #FF61A6;
     margin-top: 20px;
 }
+
 .welcome-message {
     font-size: 2rem;
     color: #FF61A6;
     margin: 20px 0;
     animation: fadeIn 3s ease-in-out;
 }
+
 /* Gallery styles */
 .gallery {
     display: grid;
