@@ -7,11 +7,11 @@ body {
 }
 
 header {
+    margin: auto;
+    width: 50%;
     background-color: #FCD2D2;
     padding: 70px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    height: 200px;
-    width: 200px; 
 }
 
 h1#header {
