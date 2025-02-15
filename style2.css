@@ -85,3 +85,43 @@ button {
 button:hover {
     background-color: #FF61A6;
 }
+/* Animation for photo containers */
+@keyframes popUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Photo container styles */
+.photo {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: popUp 1s ease-out forwards; /* Added 'forwards' to retain the final state */
+    opacity: 0; /* Start as invisible */
+    animation-delay: 0s; /* Default delay */
+}
+
+/* Apply delay for each image */
+.photo:nth-child(1) {
+    animation-delay: 0s;
+}
+.photo:nth-child(2) {
+    animation-delay: 0.5s;
+}
+.photo:nth-child(3) {
+    animation-delay: 0.7s;
+}
+.photo:nth-child(4) {
+    animation-delay: 0.9s;
+}
+/* Continue similarly for more images */
+
+/* Rest of the styling remains the same */
