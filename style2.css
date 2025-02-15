@@ -85,6 +85,7 @@ button {
 button:hover {
     background-color: #FF61A6;
 }
+
 /* Animation for photo containers */
 @keyframes popUp {
     from {
