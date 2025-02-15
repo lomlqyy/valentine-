@@ -25,6 +25,7 @@ header h1 {
     color: #FF4070;
     font-family: 'Georgia', serif;
     margin-bottom: 10px;
+    animation: fadeIn 2s ease-in-out;
 }
 
 header p {
@@ -39,6 +40,17 @@ main {
     margin: 0 auto;
 }
 
+p#greeting {
+    font-size: 1.5rem;
+    color: #FF61A6;
+    margin-top: 20px;
+}
+.welcome-message {
+    font-size: 2rem;
+    color: #FF61A6;
+    margin: 20px 0;
+    animation: fadeIn 3s ease-in-out;
+}
 /* Gallery styles */
 .gallery {
     display: grid;
