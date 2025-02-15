@@ -22,6 +22,12 @@ h1#header {
     animation: fadeIn 2s ease-in-out;
 }
 
+p#disclaimer {
+    font-size: 1.5rem;
+    color: FF61A6;
+    margin-top: 20px;
+}
+    
 p#greeting {
     font-size: 1.5rem;
     color: #FF61A6;
@@ -149,5 +155,6 @@ section {
     display: grid;
     place-items: center;
     align-content: center;
-    min-height: 100vh; 
+    min-height: 100vh;
+    padding: 50px;
 }
