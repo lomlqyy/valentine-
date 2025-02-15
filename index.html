@@ -45,15 +45,30 @@
   </div>
   
   <!--script ahh-->
-  <script>
-    let yesButton = document.getElementById("yesButton");
-    let noButton = document.getElementById("noButton");
+ <script>
+    const yesButton = document.getElementById('yesButton');
+    const noButton = document.getElementById('noButton');
+    let noButtonCaptions = ['No', 'are you sure?', 'no? :(', 'press yes :((', 'whyyy','pleaseee',':(','ok','FINE.','hm',':('];
+    let noButtonClickCount = 0;
 
-    noButton.addEventListener("click", function() {
-      let currentSize = parseInt(window.getComputedStyle(yesButton).fontSize);
-      yesButton.style.fontSize = (currentSize + 20) + "px"; // Increase font size by 10px on each click
+    noButton.addEventListener('click', function() {
+        // Change the caption text
+        noButton.innerText = noButtonCaptions[noButtonClickCount % noButtonCaptions.length];
+
+        // Increase the size of the Yes button
+        const currentWidth = parseInt(window.getComputedStyle(yesButton).width);
+        const newWidth = currentWidth + 50;
+        yesButton.style.width = newWidth + 'px';
+        yesButton.style.height = newWidth + 'px';
+
+        // Eventually make the Yes button fullscreen
+        if (newWidth >= window.innerWidth) {
+            yesButton.classList.add('fullscreen');
+        }
+
+        noButtonClickCount++;
     });
-  </script>
+</script>
 <script src="script.js"> </script> 
 </body>
 </html>
